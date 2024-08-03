@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" prefHeight="75.0" prefWidth="600.0" text="Dottore" />
+      <AnchorPane prefHeight="645.0" prefWidth="619.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="619.0" text="id" />
+            <TextField layoutX="235.0" layoutY="23.0" />
+            <Label alignment="CENTER" layoutY="59.0" prefHeight="17.0" prefWidth="619.0" text="nome" />
+            <TextField layoutX="235.0" layoutY="82.0" />
+            <Label alignment="CENTER" layoutY="116.0" prefHeight="17.0" prefWidth="619.0" text="cognome" />
+            <TextField layoutX="235.0" layoutY="139.0" />
+            <Label alignment="CENTER" layoutX="3.0" layoutY="177.0" prefHeight="17.0" prefWidth="619.0" text="data di nascita" />
+            <TextField layoutX="238.0" layoutY="200.0" />
+            <Label alignment="CENTER" layoutY="238.0" prefHeight="17.0" prefWidth="619.0" text="luogo di nascita" />
+            <TextField layoutX="235.0" layoutY="261.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
