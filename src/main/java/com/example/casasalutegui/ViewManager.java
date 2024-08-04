@@ -28,7 +28,7 @@ public class ViewManager {
         ViewManager.rootBox = rootPane;
     }
 
-    public void showNavigationMenu2() throws IOException {
+    public void showNavigationMenu() throws IOException {
         Node navigationMenu = getNode("secretary-menu.fxml");
         rootBox.getChildren().add(navigationMenu);
     }
@@ -55,6 +55,11 @@ public class ViewManager {
         System.out.println("showAppointmentsList");
     }
 
+    public void showUserDetail() throws IOException {
+        Node userDetail = getNode("user-detail-view.fxml");
+        setSecondColumn(userDetail);
+    }
+
     private Node getNode(String resourceName) throws IOException {
         URL resource = getClass().getResource(resourceName);
         FXMLLoader loader = new FXMLLoader(resource);
@@ -63,14 +68,14 @@ public class ViewManager {
     }
 
     private void setFirstColumn(Node node) {
-        if (rootBox.getChildren().size() >= 2) {
-            rootBox.getChildren().remove(1);
+        while (rootBox.getChildren().size() > 1) {
+            rootBox.getChildren().removeLast();
         }
         rootBox.getChildren().add(node);
     }
 
     private void setSecondColumn(Node node) {
-        if (rootBox.getChildren().size() >= 3) {
+        if (rootBox.getChildren().size() == 3) {
             rootBox.getChildren().remove(2);
         }
         rootBox.getChildren().add(node);

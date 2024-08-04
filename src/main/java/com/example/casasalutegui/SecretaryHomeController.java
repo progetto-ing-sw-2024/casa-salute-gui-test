@@ -18,7 +18,7 @@ public class SecretaryHomeController implements Initializable {
 
 
         try {
-            ViewManager.getInstance().showNavigationMenu2();
+            ViewManager.getInstance().showNavigationMenu();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

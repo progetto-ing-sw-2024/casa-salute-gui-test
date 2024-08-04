@@ -1,0 +1,18 @@
+.background-color-primary {
+	-fx-background-color: #004d7e;
+}
+
+.hf-secretary-menu-button {
+	-fx-background-color: white;
+	-fx-text-fill: black;
+	-fx-border-color: #e6e6e6;
+}
+
+.hf-secretary-menu-button-active {
+	-fx-background-color: #005fa1;
+	-fx-text-fill: white;
+}
+
+.hf-background-white {
+	-fx-background-color: white;
+}

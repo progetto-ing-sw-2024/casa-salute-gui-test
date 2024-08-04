@@ -16,6 +16,7 @@ public class SecretaryMenuController implements Initializable {
     public Button patientsButton;
     public Button appointmentsButton;
     public Button logoutButton;
+    private Button activeButton;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -25,6 +26,7 @@ public class SecretaryMenuController implements Initializable {
     @FXML
     private void navigationButtonClicked(MouseEvent actionEvent) throws IOException {
         Button x = (Button) actionEvent.getSource();
+        setActiveButton(x);
 
         if (x == usersButton) {
             ViewManager.getInstance().showUsersList();
@@ -44,5 +46,14 @@ public class SecretaryMenuController implements Initializable {
         else if (x == logoutButton) {
 
         }
+    }
+
+    private void setActiveButton(Button button) {
+        if (activeButton != null) {
+            activeButton.getStyleClass().remove("hf-secretary-menu-button-active");
+        }
+
+        activeButton = button;
+        activeButton.getStyleClass().add("hf-secretary-menu-button-active");
     }
 }

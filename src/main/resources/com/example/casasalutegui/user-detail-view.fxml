@@ -5,21 +5,29 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="479.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="479.0" styleClass="hf-background-white" stylesheets="@app-style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.casasalutegui.UserDetailController">
    <children>
-      <Label alignment="CENTER" prefHeight="75.0" prefWidth="479.0" text="Utente" />
+      <AnchorPane prefHeight="75.0" prefWidth="479.0" styleClass="background-color-primary">
+         <children>
+            <Label alignment="CENTER" prefHeight="75.0" prefWidth="479.0" text="Utente" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
       <AnchorPane prefHeight="644.0" prefWidth="479.0">
          <children>
-            <Label layoutX="235.0" layoutY="6.0" text="id" />
-            <TextField layoutX="166.0" layoutY="39.0" />
-            <Label layoutX="215.0" layoutY="74.0" text="username" />
-            <TextField layoutX="166.0" layoutY="99.0" />
-            <Label layoutX="220.0" layoutY="137.0" text="password" />
-            <TextField layoutX="166.0" layoutY="165.0" />
-            <Button layoutX="191.0" layoutY="220.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Salva" />
-            <Button layoutX="190.0" layoutY="276.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Elimina" />
+            <Label layoutX="234.0" layoutY="27.0" text="id" />
+            <TextField layoutX="165.0" layoutY="60.0" />
+            <Label layoutX="214.0" layoutY="95.0" text="username" />
+            <TextField layoutX="165.0" layoutY="120.0" />
+            <Label layoutX="219.0" layoutY="158.0" text="password" />
+            <TextField layoutX="165.0" layoutY="186.0" />
+            <Button layoutX="190.0" layoutY="241.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Salva" />
+            <Button layoutX="189.0" layoutY="297.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Elimina" />
          </children>
       </AnchorPane>
    </children>
