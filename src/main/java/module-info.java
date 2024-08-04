@@ -9,6 +9,7 @@ module com.example.casasalutegui {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires java.desktop;
 
     opens com.example.casasalutegui to javafx.fxml;
     exports com.example.casasalutegui;
